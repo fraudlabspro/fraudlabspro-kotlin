@@ -14,7 +14,7 @@ internal class SMSVerification {
     fun sendSMS(data: Hashtable<String?, String?>): String {
         try {
             val dataStr = StringBuilder()
-            data["source"] = "sdk-java"
+            data["source"] = FraudLabsPro.SOURCE
             data["source_version"] = FraudLabsPro.VERSION
             for (entry in data.entries) {
                 dataStr.append("&").append(entry.key).append("=").append(URLEncoder.encode(entry.value, "UTF-8"))
@@ -37,7 +37,7 @@ internal class SMSVerification {
     fun verifySMS(data: Hashtable<String?, String?>): String {
         try {
             val dataStr = StringBuilder()
-            data["source"] = "sdk-java"
+            data["source"] = FraudLabsPro.SOURCE
             data["source_version"] = FraudLabsPro.VERSION
             for (entry in data.entries) {
                 dataStr.append("&").append(entry.key).append("=").append(URLEncoder.encode(entry.value, "UTF-8"))
