@@ -4,7 +4,7 @@ object FraudLabsPro {
      *
      * string
      */
-    const val VERSION: String = "4.0.0"
+    const val VERSION: String = "4.0.1"
 
     /**
      * API KEY From Merchant

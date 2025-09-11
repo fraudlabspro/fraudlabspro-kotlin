@@ -46,7 +46,7 @@ class Order {
             }
 
             if (data.get("user_phone") != null && !data.get("user_phone")!!.isEmpty()) {
-                data["user_phone"] = data.get("user_phone")!!.replace("[^a-zA-Z]".toRegex(), "")
+                data["user_phone"] = data.get("user_phone")!!.replace("[^0-9]".toRegex(), "")
             }
 
             if (data.get("currency") == null || data.get("currency")!!.isEmpty()) {
