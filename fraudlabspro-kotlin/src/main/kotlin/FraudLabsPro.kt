@@ -4,7 +4,7 @@ object FraudLabsPro {
      *
      * string
      */
-    const val VERSION: String = "4.0.2"
+    const val VERSION: String = "4.1.0"
 
     /**
      * Source of the API call
