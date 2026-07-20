@@ -40,11 +40,12 @@ object TestValidate {
         // Order information
         data["user_order_id"] = "67398"
         data["user_order_memo"] = "Online shop"
-        data["amount"] = "79.89"
-        data["quantity"] = "1"
+        data["amount"] = "119.98"
+        data["quantity"] = "2"
         data["currency"] = "USD"
         data["payment_gateway"] = "stripe"
         data["payment_mode"] = order.CREDIT_CARD // Please refer reference section for full list of payment methods
+        data["items"] = '[{"sku": "SKU-1001","quantity": 1,"price": 99.99,"type": "physical","name": "Wireless Headphones","purchase_type": "one-time purchase"},{"sku": "SKU-2005","quantity": 1,"price": 19.99,"type": "downloadable","name": "Country List"}]'
 
         // Shipping information
         data["ship_first_name"] = "Hector"
